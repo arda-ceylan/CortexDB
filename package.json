@@ -1,0 +1,49 @@
+{
+  "name": "cortexdb",
+  "version": "1.0.0",
+  "description": "Universal AI Developer & Agent Memory Engine (MCP Server with Sub-Millisecond Search & RAM Virtual Mapped SQLite)",
+  "main": "build/index.js",
+  "type": "module",
+  "author": "Arda Ceylan",
+  "license": "Apache-2.0",
+  "bin": {
+    "cortexdb": "./build/index.js",
+    "cortex": "./build/cli/cortex.js"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "ai-agent",
+    "developer-memory",
+    "sqlite",
+    "fts5",
+    "bm25",
+    "in-memory-search",
+    "context-engine",
+    "claude-code",
+    "antigravity",
+    "cli"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/index.js",
+    "cortex": "tsx src/cli/cortex.ts",
+    "test": "vitest run test/",
+    "test:watch": "vitest test/",
+    "simulate": "tsx test/simulate-agent.ts",
+    "optimize": "tsx src/cli/optimize.ts",
+    "prepare": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.4.0",
+    "better-sqlite3": "^11.8.1",
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^22.13.4",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3",
+    "vitest": "^3.2.7"
+  }
+}

@@ -1,0 +1,12 @@
+node_modules/
+build/
+test-temp-data/
+simulation-demo-db/
+*.log
+.env
+.env.local
+.DS_Store
+Thumbs.db
+*.db
+*.db-wal
+*.db-shm
