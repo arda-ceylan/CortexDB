@@ -94,8 +94,8 @@ In addition to serving AI assistants over standard Stdio JSON-RPC, CortexDB incl
 
 ### 1. Clone & Build
 ```bash
-git clone https://github.com/your-username/cortexdb.git
-cd cortexdb
+git clone https://github.com/arda-ceylan/CortexDB.git
+cd CortexDB
 npm install
 npm run build
 

@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📖 CortexDB Documentation & Guide
+    url: https://github.com/arda-ceylan/CortexDB#readme
+    about: Please review the README and setup guides before opening an issue.
